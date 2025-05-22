@@ -1,0 +1,20 @@
+branch-defaults:
+  default:
+    environment: flask-env-2
+global:
+  application_name: flask-age-app
+  default_ec2_keyname: flask-keypair        # ← Replace with your actual EC2 key pair
+  default_platform: Python
+  default_region: us-east-1                          # ← Replace with your actual AWS region
+  instance_profile: aws-elasticbeanstalk-ec2-role
+  service_role: aws-elasticbeanstalk-service-role
+  vpc:
+    id: vpc-04187d685a644b8a6                         # ← Your custom VPC ID
+    subnets:
+      app:
+        - subnet-075073eecc48db2d5                               # ← Private subnet for app instance 1
+        - subnet-0ce7097fabad6dc6a                                # ← Private subnet for app instance 2
+      elb:
+        - subnet-036f1cc33cf59739a                               # ← Public subnet for ELB 1
+        - subnet-0eacfb380042f48e8                            # ← Public subnet for ELB 2
+    publicip: true

@@ -1,0 +1,62 @@
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Environment variable files
+*.env
+.env.*
+
+# Flask instance folder
+instance/
+
+# Pytest / Coverage
+.cache/
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Migrations
+migrations/
+
+# SQLite DB (if used)
+*.sqlite3
+
+# Logs
+*.log
+
+# MyPy / Pylint / Bandit / other lint tools
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+.pylint.d/
+
+# Docker
+*.pid
+*.tar
+*.log
+docker-compose.override.yml
+
+# VS Code / JetBrains IDEs
+.vscode/
+.idea/
+
+# macOS / Linux / Windows system files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
