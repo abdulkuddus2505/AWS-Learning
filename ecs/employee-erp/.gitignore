@@ -60,11 +60,3 @@ Thumbs.db
 ehthumbs.db
 desktop.ini
 
-
-
-
-aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 532465846476.dkr.ecr.us-east-1.amazonaws.com/employee-erp
-
-docker tag employee-erp:latest 532465846476.dkr.ecr.us-east-1.amazonaws.com/employee-erp
-
-docker push 532465846476.dkr.ecr.us-east-1.amazonaws.com/employee-erp
